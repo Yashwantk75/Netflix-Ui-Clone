@@ -28,7 +28,7 @@ function Card({ movie, isLiked = false }) {
 
     const addToList = async () => {
         try {
-            await axios.post('https://netflix-clone-ye9l.onrender.com/add', {
+            await axios.post('https://netflix-clone-ye9l.onrender.com/api/user/add', {
                 email,
                 data: movie,
             }).catch((err) => { console.log(err); });
@@ -110,7 +110,7 @@ const Container = styled.div`
                 object-fit: cover;
                 border-radius: 0.3rem;
                 top: 0;
-                z-index: 4;
+                z-index: 91;
                 position:absolute;
             }
             video{
@@ -119,7 +119,7 @@ const Container = styled.div`
                 object-fit:cover;
                 border-radius: 0.3rem;
                 top:0;
-                z-index: 5;
+                z-index: 92;
                 position: absolute;
             }
         }

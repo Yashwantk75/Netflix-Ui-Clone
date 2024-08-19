@@ -46,7 +46,7 @@ CardSlider.propTypes = {
     title: PropType.any.isRequired,
 };
 
-export default React.memo(CardSlider);
+export default React.memo(CardSlider); // rerender only when prop of component get change 
 
 const Container = styled.div`
     gap: 1rem;
