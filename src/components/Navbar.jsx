@@ -28,7 +28,8 @@ export default function Navbar({ isScrolled }) {
             <nav className={`flex ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="left flex a-center">
                     <div className="brand">
-                        <img src={logo} alt="Netflix logo" />
+                        {/* <img src={logo} alt="Netflix logo" /> */}
+                        STREAMFLIX
                     </div>
                     <ul className='flex list'>
                         {
@@ -82,9 +83,11 @@ const Container = styled.div`
         .left{
             gap:3rem;
             .brand{
-                img{
-                    height:4rem;
-                }
+                font-size: 4rem;
+                color: red;
+                /* img{
+                    /* height:4rem; */
+                } */
             }
             .list{
                 gap:2rem;

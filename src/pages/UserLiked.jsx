@@ -35,7 +35,6 @@ function UserLiked() {
         return () => (window.onscroll = null);
     };
 
-    console.log(movies);
 
     return (
         <Container>

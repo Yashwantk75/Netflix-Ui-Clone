@@ -8,7 +8,8 @@ export default function Header({ login }) {
     return (
         <Container className='flex a-center j-between'>
             <div className="logo">
-                <img src={logo} alt="" />
+                {/* <img src={logo} alt="" /> */}
+                STREAMFLIX
             </div>
             <button onClick={() => login ? navigate('/login') : navigate('/signup')}>{login ? "Log In" : "Sign In"}</button>
         </Container>
@@ -18,8 +19,10 @@ export default function Header({ login }) {
 const Container = styled.div`
     padding:0 4rem;
     .logo{
+        font-size: 4rem;
+        color: red;
         img{
-            height:5rem;
+            /* height:5rem; */
         }
     }
     button{
